@@ -48,7 +48,7 @@
 .card {
     padding: 5px;
     width: 310px;
-    height: 380px;
+    height: auto;
     border: 3px solid black;
     border-radius: 6px;
     position: relative;
@@ -100,13 +100,25 @@
     margin: 10px 0;
 }
 
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) {
+    .card {
+        height: 380px;
+    }
+}
 
-@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {}
+@media (min-width: 481px) {
+    .card {
+        height: 380px;
+    }
+}
 
 @media (min-width: 768px) {
     .nav {
         display: block;
+    }
+
+    .card {
+        height: 380px;
     }
 
     .cart {
@@ -122,19 +134,19 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) {
     .nav {
         display: block;
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) {
     .nav {
         display: block;
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
+@media (min-width: 1025px) {
     .nav {
         display: block;
     }
